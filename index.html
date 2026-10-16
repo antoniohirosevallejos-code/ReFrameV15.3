@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="es">
 <head>
@@ -24,8 +23,9 @@
 <div class="divider"></div><section id="livePreviewWrap" class="live-preview-wrap hidden"><div class="live-preview-heading"><b>Elige cómo quieres tu video</b><small>Selecciona una opción para ver cómo quedará.</small></div><div id="livePreviewGrid" class="live-preview-grid" role="radiogroup" aria-label="Elige el encuadre del video"></div></section><input id="format" type="hidden" value="vertical">
 <div class="name-field"><label for="outputName">Nombre del video <span>(opcional)</span></label><input id="outputName" type="text" maxlength="80" placeholder="Déjalo vacío para conservar el nombre original"><p class="helper">Añadiremos automáticamente vertical, cuadrado u horizontal al nombre.</p></div>
 <details class="advanced-options"><summary>Ajustar encuadre (opcional)</summary><div class="crop-live-heading"><b>Vista previa en vivo</b></div><div class="crop-preview-card"><canvas id="cropEditor" width="360" height="540" aria-label="Vista previa del área útil del video"></canvas><p>Área útil del video · Lo que quede fuera se recortará</p></div><p class="helper">¿Ves bordes negros o necesitas cambiar el encuadre? Ajusta aquí la imagen. Si el video se ve bien, puedes dejar los valores en 0%. El fondo difuminado se adapta automáticamente.</p><div class="slider-control"><label for="horizontalCrop">Ajuste horizontal <span id="horizontalValue">0%</span></label><input id="horizontalCrop" type="range" min="0" max="40" value="0" step="1"><small>Recorta por igual desde ambos lados.</small></div><div class="slider-control"><label for="verticalCrop">Ajuste vertical <span id="verticalValue">0%</span></label><input id="verticalCrop" type="range" min="0" max="40" value="0" step="1"><small>Recorta por igual desde arriba y abajo.</small></div><div class="crop-actions"><button id="resetCrop" type="button" class="btn secondary">Restablecer</button></div></details><div id="progress" class="progress-wrap hidden"><div class="progress-top"><b id="progressText">Preparando tu video…</b><span id="pct">0%</span></div><div class="track"><div id="bar"></div></div><p id="detail" class="helper"></p></div><p id="status" class="message" role="status" aria-live="polite"></p><div class="actions"><button id="convert" class="btn primary full" disabled>Adaptar video</button><button id="cancel" class="btn secondary full hidden" type="button">Cancelar conversión</button><button id="logout" class="text-button" type="button">Cerrar acceso</button></div><div id="results" class="results hidden"></div><p class="privacy-note">Tus videos se procesan en tu dispositivo. Mantén esta página abierta y la pantalla encendida hasta que termine.</p></div></section>
+
+
 </main>
 <div id="cancelDialog" class="confirm-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="cancelTitle"><div class="confirm-card"><h3 id="cancelTitle">¿Estás seguro de que quieres cancelar la conversión?</h3><p>Se descartará el video que se está creando.</p><div class="confirm-actions"><button id="confirmCancel" class="btn secondary" type="button">No, continuar</button><button id="confirmStop" class="btn primary" type="button">Sí, cancelar</button></div></div></div>
 <script type="module" src="./app.js"></script>
-</body>
-</html>
+</body></html>
